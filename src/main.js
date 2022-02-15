@@ -4,6 +4,8 @@ import router from './router'
 import './plugins/element.js'
 // 导入全局样式表
 import './assets/css/global.css'
+/* 面包屑导航 */
+import Nav from './components/nav/Header.vue'
 /* 导入icon图标 */
 import './assets/fonts/iconfont.css'
 import axios from 'axios'
@@ -20,6 +22,7 @@ Vue.prototype.$http = axios
 Vue.config.productionTip = false
 
 Vue.component('tree-table', TreeTable)
+Vue.component('nav-header', Nav)
 
 new Vue({
   router,
